@@ -22,4 +22,8 @@ export class CustomerListComponent implements OnInit {
       this.customersOrderTotal += cust.orderTotal;
     })
   }
+
+  sort(property: string) {
+    // TODO
+  }
 }
