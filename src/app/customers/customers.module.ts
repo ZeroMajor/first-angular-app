@@ -4,10 +4,11 @@ import { NgModule } from '@angular/core';
 import { CustomersComponent } from './customers.component';
 import { CustomerListComponent } from './customer-list/customer-list.component';
 import { FilterTextboxComponent } from './filter-textbox/filter-textbox.component';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
-    declarations: [CustomersComponent, CustomerListComponent, FilterTextboxComponent],
-    imports: [CommonModule],
-    exports: [CustomersComponent]
+    declarations: [ CustomersComponent, CustomerListComponent, FilterTextboxComponent ],
+    imports: [ CommonModule, SharedModule ],
+    exports: [ CustomersComponent ]
 })
 export class CustomersModule { }
