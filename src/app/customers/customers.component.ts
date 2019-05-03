@@ -3,21 +3,20 @@ import { ICustomer } from '../shared/interfaces';
 import { DataService } from '../services/data.service';
 
 @Component({
-  selector: 'app-customers',
-  templateUrl: './customers.component.html',
-  styleUrls: ['./customers.component.css']
+    selector: 'app-customers',
+    templateUrl: './customers.component.html',
+    styleUrls: ['./customers.component.css']
 })
 export class CustomersComponent implements OnInit {
-  title: string;
-  people: ICustomer[];
+    title: string;
+    people: ICustomer[];
 
-  constructor(private dataService: DataService) { }
+    constructor(private dataService: DataService) { }
 
-  ngOnInit() {
-    this.title = "Customers";
-    this.dataService
-      .getCustomers()
-      .subscribe((customers: ICustomer[]) => this.people = customers);
-  }
-
+    ngOnInit() {
+        this.title = "Customers";
+        this.dataService
+            .getCustomers()
+            .subscribe((customers: ICustomer[]) => this.people = customers);
+    }
 }
