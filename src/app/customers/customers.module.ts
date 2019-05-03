@@ -9,8 +9,8 @@ import { SharedModule } from '../shared/shared.module';
 import { ServicesModule } from '../services/services.module';
 
 @NgModule({
-    declarations: [ CustomersComponent, CustomerListComponent, FilterTextboxComponent ],
-    imports: [ CommonModule, SharedModule, FormsModule, ServicesModule ],
-    exports: [ CustomersComponent ]
+    declarations: [CustomersComponent, CustomerListComponent, FilterTextboxComponent],
+    imports: [CommonModule, SharedModule, FormsModule, ServicesModule],
+    exports: [CustomersComponent]
 })
 export class CustomersModule { }

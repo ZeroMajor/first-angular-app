@@ -30,7 +30,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 * `[()]` - two-sided data binding
 * `*ngIf` - structural directive
+* using `ngModel` requires import of `FormsModule`
 * it is recommended to add `@Injectable` for each service, even if it doesn't receive injection
 * services are declared available by adding them to `providers` section of module
 * `Observable` has a pipeline (`.pipe`) suitable for e.g. error handling
-* using `ngModel` requires import of `FormsModule`
+* to actually call `Observable`, `.subscribe()` is used
