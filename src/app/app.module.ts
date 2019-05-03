@@ -3,19 +3,19 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SubHeader } from './sub-header/sub-header';
 import { CustomersModule } from './customers/customers.module';
 import { SharedModule } from './shared/shared.module';
+import { OrdersModule } from './orders/orders.module';
 
 @NgModule({
     declarations: [
-        AppComponent,
-        SubHeader
+        AppComponent
     ],
     imports: [
         BrowserModule,
-        AppRoutingModule,
         CustomersModule,
+        OrdersModule,
+        AppRoutingModule,
         SharedModule
     ],
     providers: [],

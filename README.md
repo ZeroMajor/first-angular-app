@@ -35,3 +35,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 * services are declared available by adding them to `providers` section of module
 * `Observable` has a pipeline (`.pipe`) suitable for e.g. error handling
 * to actually call `Observable`, `.subscribe()` is used
+* `ActivatedRoute` - currently active route
+* In route module usages, order does matter - more common one should be latter
